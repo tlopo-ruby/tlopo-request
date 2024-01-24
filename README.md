@@ -10,12 +10,14 @@ Installing is a simple `gem install tlopo-request`
 
 Fluent API: 
 ```ruby
- puts Tlopo:Request.new.url('https://postman-echo.com/get').run.code
- # "200"
+require 'tlopo/request'  
+puts Tlopo:Request.new.url('https://postman-echo.com/get').run.code
+# "200"
 ```
 
 DSL API: 
 ```ruby
+require 'tlopo/request'  
 url = 'https://postman-echo.com/put?foo=bar&bar=foo'
 payload = { 'foo' => 'bar', 'bar' => 'foo' }
 headers = { 'Content-Type': 'application/json' }
