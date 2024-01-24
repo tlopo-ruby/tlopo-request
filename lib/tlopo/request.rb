@@ -20,7 +20,7 @@ end
 module Tlopo
   class Request
     extend Setters
-    make_setter :url, :headers, :method, :payload
+    make_setter :url, :headers, :method, :payload, :insecure
 
     def initialize
       @method = 'get'
