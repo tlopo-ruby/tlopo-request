@@ -11,7 +11,7 @@ module Setters
     names.each do |name|
       define_method(name) do |val|
         instance_variable_set("@#{name}", val)
-        return self
+        self
       end
     end
   end

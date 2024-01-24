@@ -34,3 +34,7 @@ Metrics/BlockLength:
   Exclude:
     - rest.rb
     - infra/**/*
+Lint/OrAssignmentToConstant:
+  Enabled: false
+Gemspec/RequireMFA:
+  Enabled: false
