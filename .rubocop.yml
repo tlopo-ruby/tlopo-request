@@ -1,0 +1,36 @@
+AllCops:
+  DisplayCopNames: true
+  TargetRubyVersion: 2.6 
+  NewCops: enable
+
+MethodLength:
+  Enabled: false
+ClassLength:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Metrics/ParameterLists:
+  Max: 5
+  CountKeywordArgs: false
+Metrics/CyclomaticComplexity:
+  Max: 15
+Metrics/PerceivedComplexity:
+  Max: 15
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/ConditionalAssignment:
+  Enabled: false
+Layout/FirstHashElementIndentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - rest.rb
+    - infra/**/*
