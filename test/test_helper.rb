@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
-require 'tlopo/request'
 require 'simplecov'
 require 'minitest/autorun'
 
@@ -17,3 +16,4 @@ end
 
 SimpleCov.minimum_coverage 80
 SimpleCov.start
+require 'tlopo/request'
